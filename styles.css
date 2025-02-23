@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background-color:rgb(80, 29, 27);
+    background-color: rgb(80, 29, 27);
     padding: 15px 0;
     color: white;
     text-align: center;
@@ -43,7 +43,7 @@ header nav ul li a {
 
 /* Banner Section */
 .banner {
-    background-color:rgb(152, 44, 25);
+    background-color: rgb(152, 44, 25);
     padding: 50px 0;
     text-align: center;
     color: white;
@@ -72,6 +72,8 @@ header nav ul li a {
 .product-list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .product-card {
@@ -81,6 +83,7 @@ header nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
+    max-width: 100%;
 }
 
 .product-card img {
@@ -99,6 +102,7 @@ header nav ul li a {
     color: #ff5722;
 }
 
+/* Category Section */
 .category-list {
     display: flex;
     justify-content: space-around;
@@ -110,14 +114,14 @@ header nav ul li a {
     text-align: center;
     border: 1px solid #ddd;
     padding: 10px;
-    width: 220px;  /* Adjust width based on your design */
+    width: 220px;
+    max-width: 100%;
 }
 
 .category-card img {
     max-width: 100%;
     height: auto;
 }
-
 
 /* Footer */
 footer {
@@ -129,4 +133,130 @@ footer {
 
 footer p {
     font-size: 1em;
+}
+
+/* Media Queries */
+
+/* For larger devices like laptops and desktops */
+@media (min-width: 1024px) {
+    .featured-products {
+        padding: 50px 15%;
+    }
+
+    .product-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .product-card {
+        width: 250px;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+}
+
+/* For tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+    .featured-products {
+        padding: 50px 5%;
+    }
+
+    .product-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 30%;
+    }
+
+    header .logo h1 {
+        font-size: 2em;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+}
+
+/* For mobile devices (portrait) */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.8em;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .banner h2 {
+        font-size: 2.5em;
+    }
+
+    .banner p {
+        font-size: 1.2em;
+    }
+
+    .featured-products h3 {
+        font-size: 1.8em;
+    }
+
+    .product-list {
+        display: block;
+        gap: 10px;
+    }
+
+    .product-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .category-list {
+        display: block;
+    }
+
+    .category-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* For very small mobile devices (like older phones) */
+@media (max-width: 480px) {
+    .banner h2 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1.1em;
+    }
+
+    .product-card h4 {
+        font-size: 1.2em;
+    }
+
+    .product-card p {
+        font-size: 1em;
+    }
+
+    .product-list {
+        display: block;
+    }
+
+    .product-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .category-card {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
