@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - eCommerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 151%;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .order {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e5e5e5;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .order-header h3 {
+            margin: 0;
+        }
+
+        .order-status {
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .order-status.pending {
+            background-color: #FF9800;
+        }
+
+        .order-status.shipped {
+            background-color: #2196F3;
+        }
+
+        .order-status.delivered {
+            background-color: #4CAF50;
+        }
+
+        .order-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .order-details div {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .order-footer {
+            text-align: right;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .order-footer .total-price {
+            color: #FF5722;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <br><br><h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:180%;">ZapShop</h1><br><br>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product_cataegories.html">Product Categories</a></li>
+                <li><a href="my_orders.html">My Orders</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<header>
+    My Orders
+</header>
+
+<div class="container">
+    <div class="order">
+        <div class="order-header">
+            <h3>Order #12345</h3>
+            <span class="order-status pending">Pending</span>
+        </div>
+        <div class="order-details">
+            <div>
+                <h4>Items:</h4>
+                <ul>
+                    <li>Pink Soft Toy - ₹800</li>
+                    
+                </ul>
+                <image src="a-pink-teddy-bear-sitting-upright-isolated-on-a-transparent-background-free-png.webp" height="200px"width="200px"></image>
+            </div>
+            <div>
+                <h4>Shipping Info:</h4>
+                <p>Address: 9809 Nanavati Hospital, S.V. Road, Vile Parle (West), Mumbai 400 056, Mumbai, Maharashtra 400056, India </p>
+                <p>Phone: +91 7009687978</p>
+            </div>
+        </div>
+        <div class="order-footer">
+            Total Price: <span class="total-price">₹800</span>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="order-header">
+            <h3>Order #12346</h3>
+            <span class="order-status shipped">Shipped</span>
+        </div>
+        <div class="order-details">
+            <div>
+                <h4>Items:</h4>
+                <ul>
+                    <li>EXP Football- ₹1000</li>
+                    
+                </ul><br><br>
+                <img src="football-soccer-transparent-free-png.webp" height="150"width="150px"></image>
+            </div>
+            <div>
+                <h4>Shipping Info:</h4>
+                <p>Address: SVS Rd, Above Marshall's Wallpaper Showroom, Prabhadevi, Mumbai, Maharashtra 400025, India</p>
+                <p>Phone: +91 7009687978</p>
+            </div>
+        </div>
+        <div class="order-footer">
+            Total Price: <span class="total-price">₹1000</span>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="order-header">
+            <h3>Order #12347</h3>
+            <span class="order-status delivered">Delivered</span>
+        </div>
+        <div class="order-details">
+            <div>
+                <h4>Items:</h4>
+                <ul>
+                    <li>Cool Jacket - ₹800</li>
+                </ul>
+                <img src="pngtree-classic-varsity-jacket-mockup-retro-cool-in-art-png-image_13525070.png" height="250"width="250px"></image>
+            </div>
+            <div>
+                <h4>Shipping Info:</h4>
+                <p>Address: 91011 11th Road, Khar West, Mumbai, Maharashtra 400052, India</p>
+                <p>Phone: +91 7007484948</p>
+            </div>
+        </div>
+        <div class="order-footer">
+            Total Price: <span class="total-price">₹800</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

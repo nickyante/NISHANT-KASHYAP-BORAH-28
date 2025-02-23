@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #ff8c00;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .support-container {
+            padding: 20px;
+        }
+        .contact-form {
+            background-color: #ffddc1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            color: #ff6600;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ff6600;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+        .faq-section {
+            background-color: #ffebcc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .faq-section h3 {
+            color: #ff6600;
+            font-size: 28px;
+        }
+        .faq-item {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ff6600;
+            border-radius: 5px;
+        }
+        .faq-item h4 {
+            margin: 0;
+            color: #ff6600;
+        }
+        .faq-item p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #666;
+        }
+        footer {
+            background-color: #ff8c00;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <br><br><h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:280%;">ZapShop</h1><br><br>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product_cataegories.html">Product Categories</a></li>
+                <li><a href="my_orders.html">My Orders</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <h1>Customer Support</h1>
+    </header>
+
+    <div class="support-container">
+        <section class="contact-form">
+            <br><h2>Contact Us</h2>
+            <br><p>If you have any questions or need help, feel free to reach out to us!</p><br>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="faq-section">
+            <br><h3>Frequently Asked Questions</h3><br>
+            <div class="faq-item">
+                <h4>How do I place an order?</h4>
+                <p>To place an order, simply browse through our products, add them to your cart, and proceed to checkout.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What payment methods do you accept?</h4>
+                <p>We accept credit cards, debit cards, PayPal, and other popular payment methods.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Can I track my order?</h4>
+                <p>Yes! Once your order is shipped, you will receive a tracking number via email.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How can I return an item?</h4>
+                <p>If you're not satisfied with your purchase, you can return it within 30 days for a full refund. Please refer to our returns policy for details.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Customer Support Team | &copy; 2025 Your Ecommerce Site</p>
+    </footer>
+
+</body>
+</html>

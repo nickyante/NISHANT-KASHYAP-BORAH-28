@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffeff5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ff66b2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .wishlist-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .wishlist-item {
+            background-color: #ff99cc;
+            border: 1px solid #ff66b2;
+            border-radius: 10px;
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .wishlist-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .wishlist-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .wishlist-item h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .wishlist-item p {
+            font-size: 16px;
+            color: #666;
+        }
+        .wishlist-item button {
+            background-color: #ff66b2;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .wishlist-item button:hover {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <br><br><h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:280%;">ZapShop</h1><br><br>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product_cataegories.html">Product Categories</a></li>
+                <li><a href="my_orders.html">My Orders</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <h1>My Wishlist</h1>
+    </header>
+
+    <div class="wishlist-container">
+        <div class="wishlist-item">
+            <img src="34315-3-heart-ring-photos.png" alt="Ring"height="200px"width="200px">
+            <h3>Diamond Ring</h3>
+            <p>Regal</p><br>
+            <button>Add to Cart</button>
+        </div>
+        <div class="wishlist-item">
+            <img src="pngtree-cute-pink-fur-plush-teddy-bear-soft-stuffed-toy-design-png-image_14604016.png" alt="Teddy"height="200px"width="200px">
+            <h3>Pink Teddy</h3>
+            <p>Soft Fluffy</p><br>
+            <button>Add to Cart</button>
+        </div>
+        <div class="wishlist-item">
+            <img src="BLL4569171PNG_01.png" alt="Earing"height="200px"width="200px">
+            <h3>Gold Earing</h3>
+            <p>Pure Elegance</p><br>
+            <button>Add to Cart</button>
+        </div>
+        <div class="wishlist-item">
+            <img src="ButterflyNecklace-14KGold_sq_4000x.webp" alt="Necklace"height="200px"width="200px">
+            <h3>Butterfly Necklace</h3>
+            <p>For Butterflies Around You</p><br>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
