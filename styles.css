@@ -1,0 +1,132 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color:rgb(80, 29, 27);
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Banner Section */
+.banner {
+    background-color:rgb(152, 44, 25);
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.banner h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.featured-products h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h4 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 1.2em;
+    color: #ff5722;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 220px;  /* Adjust width based on your design */
+}
+
+.category-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
